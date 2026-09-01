@@ -30,6 +30,7 @@
         <a href="#demo">Demo</a>
       </nav>
       <div class="header-actions">
+        <label class="language-control"><span>Idioma</span><select class="language-select" aria-label="Seleccionar idioma"><option value="es">ES</option><option value="en">EN</option><option value="pt">PT</option></select></label>
         <button class="theme-toggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">
           <span class="sun" aria-hidden="true">☼</span><span class="moon" aria-hidden="true">◐</span>
         </button>
@@ -58,7 +59,7 @@
           <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
           <div class="app-window">
             <div class="window-bar"><i></i><i></i><i></i><span>Resumen financiero</span></div>
-            <div class="screenshot-scroll"><img src="assets/resumen-ejemplo.png" alt="Resumen de ejemplo con patrimonio, cuentas, efectivo, ingresos, gastos e inversiones en GeFi" /></div>
+            <div class="screenshot-scroll"><img src="assets/resumen-demo.png" alt="Resumen de ejemplo con patrimonio, cuentas, efectivo, ingresos, gastos e inversiones en GeFi" /></div>
             <div class="window-body">
               <div class="mini-chart">
                 <span>Flujo del mes</span>
@@ -72,7 +73,7 @@
             </div>
           </div>
           <div class="float-card float-card-one"><span>Balance visible</span><strong>En todo momento</strong></div>
-          <div class="float-card float-card-two"><span>Registro inteligente</span><strong>“Gasté dos lucas” ✓</strong></div>
+          <div class="float-card float-card-two"><span>Registro inteligente</span><strong>“Hoy gasté 2.000” ✓</strong></div>
         </div>
       </section>
 
@@ -103,8 +104,8 @@
         </div>
         <div class="bento">
           <article class="feature feature-wide reveal">
-            <div class="feature-copy"><span class="feature-icon">✦</span><h3>Registrá como hablás</h3><p>Escribí o dictá “hoy gasté dos lucas en el supermercado”. GeFi interpreta fecha, monto, categoría y detalle.</p><span class="tag">Registro inteligente</span></div>
-            <div class="smart-input"><div class="smart-prompt"><i></i><span>Hoy gasté 2 mil en el supermercado</span><button aria-label="Enviar ejemplo">↑</button></div><div class="parsed"><span>HOY</span><span>GASTO</span><strong>$ 2.000</strong><small>Supermercado</small></div></div>
+            <div class="feature-copy"><span class="feature-icon">✦</span><h3>Registrá con lenguaje natural</h3><p>Escribí o dictá “hoy gasté 2.000 en el supermercado”. GeFi interpreta fecha, monto, categoría y detalle.</p><span class="tag">Registro inteligente</span></div>
+            <div class="smart-input"><div class="smart-prompt"><i></i><span>Hoy gasté 2.000 en el supermercado</span><button aria-label="Enviar ejemplo">↑</button></div><div class="parsed"><span>HOY</span><span>GASTO</span><strong>$ 2.000</strong><small>Supermercado</small></div></div>
           </article>
           <article class="feature feature-tall reveal">
             <span class="feature-icon">◎</span><h3>Todo tu patrimonio</h3><p>Cuentas, efectivo e inversiones se leen como una sola imagen, sin confundir transferencias con gastos.</p>
@@ -129,11 +130,11 @@
             <figcaption><strong>Registrá y entendé</strong><span>Lenguaje natural, categorías y reportes en el mismo flujo.</span></figcaption>
           </figure>
           <figure class="showcase-side reveal">
-            <div class="image-frame panoramic"><img src="assets/resumen-ejemplo.png" alt="Resumen financiero de ejemplo de GeFi" /></div>
+            <div class="image-frame panoramic"><img src="assets/resumen-demo.png" alt="Resumen financiero de ejemplo de GeFi" /></div>
             <figcaption><strong>Tu panorama completo</strong><span>Montos ficticios utilizados únicamente para esta demostración.</span></figcaption>
           </figure>
           <figure class="showcase-side reveal">
-            <div class="image-frame history"><img src="assets/historial-ejemplo.png" alt="Historial de movimientos de ejemplo de GeFi" /></div>
+            <div class="image-frame history"><img src="assets/historial-demo.png" alt="Historial de movimientos de ejemplo de GeFi" /></div>
             <figcaption><strong>Un historial que se entiende</strong><span>Ingresos, gastos e inversiones diferenciados visualmente.</span></figcaption>
           </figure>
         </div>
@@ -147,12 +148,15 @@
           <button class="button demo-external-play" type="button">Reproducir demo <span>▶</span></button>
         </div>
         <div class="demo-player reveal" aria-label="Video demostrativo interactivo de GeFi">
+          <div class="demo-chapters" role="tablist" aria-label="Capítulos de la demostración"><button class="active" type="button" data-slide="0"><b>01</b><span>Resumen</span></button><button type="button" data-slide="1"><b>02</b><span>Registro</span></button><button type="button" data-slide="2"><b>03</b><span>Corrección</span></button><button type="button" data-slide="3"><b>04</b><span>Reportes</span></button><button type="button" data-slide="4"><b>05</b><span>Historial</span></button></div>
           <div class="demo-stage">
-            <div class="demo-slide active" data-title="Tu panorama, de un vistazo"><img src="assets/resumen-ejemplo.png" alt="Resumen de ejemplo de GeFi" /><div class="demo-caption"><small>PASO 1</small><strong>Tu panorama, de un vistazo</strong><span>Patrimonio, cuentas, efectivo e inversiones.</span></div></div>
-            <div class="demo-slide demo-typing" data-title="Registrá en segundos"><div class="demo-phone"><img src="assets/logo-gefi.svg" alt=""/><p>¿Qué movimiento querés registrar?</p><div class="typing-line"><span></span><i></i></div><div class="voice-wave"><b></b><b></b><b></b><b></b><b></b></div></div><div class="demo-caption"><small>PASO 2</small><strong>Registrá en segundos</strong><span>Escribí o usá tu voz. GeFi organiza el resto.</span></div></div>
-            <div class="demo-slide" data-title="Todo queda claro"><img src="assets/historial-ejemplo.png" alt="Historial de ejemplo de GeFi" /><div class="demo-caption"><small>PASO 3</small><strong>Todo queda claro</strong><span>Fecha, categoría, cuenta, monto y detalle.</span></div></div>
+            <div class="demo-slide demo-pan active" data-title="Tu panorama, de un vistazo"><img src="assets/resumen-demo.png" alt="Resumen de ejemplo de GeFi" /><div class="demo-caption"><small>PASO 1</small><strong>Tu panorama, de un vistazo</strong><span>Patrimonio, cuentas, efectivo e inversiones.</span></div></div>
+            <div class="demo-slide demo-typing" data-title="Registrá en segundos"><div class="demo-phone"><img src="assets/logo-gefi.svg" alt=""/><p>¿Qué movimiento querés registrar?</p><div class="typing-line"><span>Hoy gasté 2.000 en el supermercado</span><i></i></div><div class="voice-wave"><b></b><b></b><b></b><b></b><b></b></div></div><div class="demo-caption"><small>PASO 2</small><strong>Registrá en segundos</strong><span>Escribí o usá tu voz. GeFi organiza el resto.</span></div></div>
+            <div class="demo-slide demo-editing" data-title="Corregí cualquier error"><div class="edit-demo-card"><p>Modificar movimiento</p><label>Fecha <span>12/08/2026</span></label><label>Monto <span class="old-value">15.000</span><span class="new-value">12.500</span></label><button>Guardar cambios</button></div><div class="demo-caption"><small>PASO 3</small><strong>Corregí cualquier error</strong><span>Editá fecha, monto o detalle y el balance se actualiza.</span></div></div>
+            <div class="demo-slide demo-reports" data-title="Entendé el mes"><img src="assets/registro-reportes-ejemplo.png" alt="Registro inteligente y reportes mensuales de GeFi" /><div class="demo-caption"><small>PASO 4</small><strong>Entendé el mes</strong><span>Visualizá el flujo y los gastos por categoría.</span></div></div>
+            <div class="demo-slide demo-pan" data-title="Todo queda claro"><img src="assets/historial-demo.png" alt="Historial de ejemplo de GeFi" /><div class="demo-caption"><small>PASO 5</small><strong>Todo queda claro</strong><span>Fecha, categoría, cuenta, monto y detalle.</span></div></div>
           </div>
-          <div class="player-controls"><button class="player-play" type="button" aria-label="Reproducir demostración">▶</button><div class="timeline"><span></span></div><time>00:00 / 00:18</time><button class="player-restart" type="button" aria-label="Reiniciar demostración">↻</button></div>
+          <div class="player-controls"><button class="player-play" type="button" aria-label="Reproducir demostración">▶</button><div class="timeline" role="slider" tabindex="0" aria-label="Progreso de la demostración" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0"><span></span><i></i></div><time>00:00 / 00:30</time><button class="player-restart" type="button" aria-label="Reiniciar demostración">↻</button></div>
         </div>
       </section>
 
