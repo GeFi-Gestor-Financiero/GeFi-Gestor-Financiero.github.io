@@ -10,8 +10,8 @@
     <meta property="og:type" content="website" />
     <title>GeFi | Gestor Financiero</title>
     <link rel="icon" href="assets/logo-gefi.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=dark-gallery-1" />
-    <script src="app.js?v=dark-gallery-1" defer></script>
+    <link rel="stylesheet" href="styles.css?v=support-1" />
+    <script src="app.js?v=support-1" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -174,7 +174,14 @@
     <footer>
       <a class="brand" href="#inicio"><img src="assets/logo-gefi.svg" alt=""/><span>GeFi</span></a>
       <p>Tu gestor financiero personal.</p>
-      <div><a href="mailto:gefisupport@gmail.com">Soporte</a><a href="https://gefi-gestor-financiero.github.io/Gestor-Financiero/">Aplicación</a><span>© 2026 GeFi</span></div>
+      <div><button class="support-open" type="button">Soporte</button><a href="https://gefi-gestor-financiero.github.io/Gestor-Financiero/">Aplicación</a><span>© 2026 GeFi</span></div>
     </footer>
+    <div class="support-modal" hidden>
+      <section role="dialog" aria-modal="true" aria-labelledby="support-title">
+        <header><div><small>GEFI SUPPORT</small><h2 id="support-title">Contactar soporte</h2></div><button class="support-close" type="button" aria-label="Cerrar">×</button></header>
+        <form class="support-form"><p>Contanos qué pasó y te responderemos directamente por correo.</p><div class="support-fields"><label>Nombre<input name="name" required minlength="2" autocomplete="name"/></label><label>Correo<input name="email" required type="email" autocomplete="email"/></label></div><label>Mensaje<textarea name="message" required minlength="10" rows="6" placeholder="¿Cómo podemos ayudarte?"></textarea></label><label class="support-trap">Website<input name="website" tabindex="-1" autocomplete="off"/></label><p class="support-error" role="alert" hidden></p><button class="support-submit" type="submit">Enviar mensaje</button><small>gefisupport@gmail.com</small></form>
+        <div class="support-success" hidden><strong>Mensaje enviado</strong><p>Soporte te responderá directamente a tu correo.</p><button class="support-done" type="button">Cerrar</button></div>
+      </section>
+    </div>
   </body>
 </html>
