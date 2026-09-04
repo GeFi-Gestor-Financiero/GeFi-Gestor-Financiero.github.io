@@ -31,3 +31,9 @@ body{font-family:"Manrope GEFI","Segoe UI Variable","Segoe UI",Arial,sans-serif;
 @media(max-width:900px){.showcase-dark{grid-column:auto}.dark-showcase{aspect-ratio:16/9}}
 body.dark{--bg:#0a0f15;--surface:#111821;--surface-2:#18212c;--text:#f3f5f7;--muted:#98a2ad;--line:#28313b;--dark:#070b10}
 @media(max-width:600px){.site-header{width:100%;top:0;margin:0;padding-inline:14px}.hero-copy{text-align:left}.hero-copy .eyebrow,.hero-actions,.trust-row{justify-content:flex-start}.hero h1{font-size:48px}.closing{border-radius:14px}}
+
+/* Translation-safe headings and uncropped product imagery. */
+.hero h1,.section-heading h2,.demo-copy h2,.closing h2{line-height:1.02;text-wrap:balance;overflow-wrap:anywhere}
+.image-frame img,.screenshot-scroll img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;object-position:center}
+.history img,.demo-history-crop>img{object-fit:contain;object-position:center}
+@media(max-width:600px){.hero h1{font-size:clamp(40px,12vw,52px)}.section-heading h2,.demo-copy h2,.closing h2{font-size:clamp(34px,10vw,43px);line-height:1.04}}
